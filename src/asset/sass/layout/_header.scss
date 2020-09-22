@@ -27,6 +27,10 @@
 .header__nav {
   margin-left: auto;
 
+  @include sp-layout {
+    display: none;
+  }
+
   ul {
     display: flex;
     padding: 0;

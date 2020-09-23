@@ -81,9 +81,9 @@ $color-gold: #e8e1d3;
     }
 }
 
-html {
-    // overflow: auto;
-}
+// html {
+//     // overflow: auto;
+// }
 
 body {
     font-family: 'Vollkorn', 'Noto Serif JP', sans-serif;
@@ -92,11 +92,11 @@ body {
     line-height: 2;
 }
 
-/* IE表示用のCSS　*/
-_:-ms-input-placeholder body,
-:root body {
-    // font-family: Meiryo, sans-serif;
-}
+// /* IE表示用のCSS　*/
+// _:-ms-input-placeholder body,
+// :root body {
+//     // font-family: Meiryo, sans-serif;
+// }
 
 img {
     width: 100%;

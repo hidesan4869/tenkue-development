@@ -1,2 +1,235 @@
-.p-top {
+.top {
+  &-mv {
+      width: 100%;
+      height: calc(100vh - 80px);
+      margin-top: 80px;
+      background-image: url(../../asset/image/mv.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+
+  &-container {
+      display: block;
+      margin-bottom: 50px;
+      padding: 60px 0;
+
+      &:nth-of-type(3) {
+          background-color: #fffff9;
+      }
+
+      @include sp-layout() {
+          padding: 30px 0;
+          height: 750px;
+          text-align: center;
+      }
+  }
+
+  &-title {
+      margin-top: 10px;
+      margin-bottom: 60px;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+
+      @include sp-layout() {
+          margin-bottom: 30px;
+      }
+  }
+
+  &-subtitle {
+      text-transform: uppercase;
+      @include font-size(18);
+  }
+
+  &-text {
+      text-align: center;
+      line-height: 2.5;
+    
+
+      
+  }
+  &-imgWrap {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+
+      & img {
+          width: 23%;
+      }
+  }
+
+  &-btnWrap {
+      width: 100%;
+  }
+
+  &-btn {
+      width: 100%;
+      margin-top: 40px;
+      margin-bottom: 30px;
+      padding: 0.6em 2em;
+      display: block;
+      color: #fff;
+      text-align: center;
+      background-color: rgba(#00478b, 1);
+
+      @include sp-layout() {
+          margin-top: 20px;
+      }
+
+      &--secondary {
+          max-width: 400px;
+          margin-left: auto;
+          margin-right: auto;
+
+          &:before {
+              background-image: url(/asset/image/login.svg);
+          }
+      }
+  }
+
+  &-note,
+  &-note a {
+      @include font-size(14);
+  }
+
+  &-imgWrap{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
+
+iframe {
+  width: 100%;
+}
+
+.l-col2{
+    display: flex;
+    justify-content: space-between;
+
+    // @include sp-layout {
+    //     display: block;
+    // }
+  &-list {
+      display: block;
+      height: 100%;
+  width: 45%;
+  float: left;
+  margin-right: 30px;
+}
+}
+
+.l-col3{
+  display: flex;
+  justify-content: space-between;
+
+  @include sp-layout() {
+    width: 100%;
+}
+  &-list{
+    width: 30%;
+  }
+}
+// .top{
+//   &-mv{
+//   margin-top:80px;
+//   width: 100%;
+//   height: 300px;
+//   background-image:url(../../asset/image/mv.jpg);
+//   background-size:cover;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   }
+// }
+// .top{
+//   &-container{
+//     padding: 60px 0;
+//   }
+
+//   &-title{
+//     margin-bottom: 60px;
+//     text-align: center;
+//     text-transform: uppercase;
+//     letter-spacing: 2px;
+//   }
+
+// &-text{
+//   text-align: center;
+//   line-height: 2.5;
+// }
+
+
+// }
+// .top{
+//   &inner{
+//     position: relative;
+//     max-width: 1024px;
+//     margin-right: auto;
+//     margin-left: auto;
+//     box-sizing: content-box !important;
+//     padding-right: 2.4% !important;
+//     padding-left: 2.4% !important;
+//   }
+// }
+// .right{
+//   width: 45%;
+// }
+// .area{
+// &-guide{
+//   margin-top:80px;
+//   width: 100%;
+//   height: 1000px;
+// }
+
+//   &-pic{
+//   width: 450px;
+//   height:450px;
+//   float: left;
+//   }
+//   &-text{
+//     margin-top: 30px;
+//     display: flex;
+//     justify-content: space-between;
+// }
+
+
+// &-imgWrap{
+//   margin-top: 30px;
+//     display: flex;
+//     justify-content: space-between;
+//   img{
+//     width: 23%;
+//   }
+// }
+// }
+
+// .top-btn{
+//   width: 100%;
+//     margin-top: 40px;
+//     margin-bottom: 30px;
+//     padding: 0.6em 2em;
+//     display: block;
+//     color: #fff;
+//     text-align: center;
+//     background-color: #00478b;
+// }
+
+
+//   top-btn{
+//     width: 100%;
+//     margin-top: 40px;
+//     margin-bottom: 30px;
+//     padding: 0.6em 2em;
+//     display: block;
+//     color: $color-light;
+//     text-align: center;
+//     background-color: rgba($color-primary, 1);
+//   }
+
+//   .l-col3{
+//     &-list img{
+//       width: 150px;
+//       height: 150px;
+//     }
+//   }

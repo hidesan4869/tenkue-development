@@ -1,2 +1,148 @@
-.p-room {
+.room {
+  margin-top: 80px;
+  padding-bottom: 150px;
+
+  @include tab-layout() {
+      padding-bottom: 80px;
+  }
+  @include sp-layout() {
+      padding-bottom: 75px;
+  }
+
+  &-mv {
+      width: 100%;
+      height: 60vh;
+      background-image: url(../../asset/image/room_04.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+  }
+
+  &__inner {
+      padding-top: 75px;
+
+      @include sp-layout() {
+          padding-top: 50px;
+      }
+  }
+
+  &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @include sp-layout() {
+          flex-wrap: wrap;
+      }
+
+      &:not(:last-child) {
+          margin-bottom: 7rem;
+
+          @include tab-layout() {
+              margin-bottom: 5.5rem;
+          }
+
+          @include sp-layout() {
+              margin-bottom: 3.5rem;
+          }
+      }
+
+      &-rev {
+          flex-direction: row-reverse;
+      }
+  }
+
+  &__item {
+      width: 47.5%;
+
+      @include sp-layout() {
+          width: 100%;
+      }
+  }
+
+  &__num {
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      letter-spacing: 0.1em;
+      @include font-size(32);
+  }
+
+  &__subtitle {
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+  }
+
+  &__text {
+      margin-bottom: 1rem;
+      font-size: 10px;
+  }
+
+  &__link {
+      width: 250px;
+      padding: 0.24em 1em;
+      color: $color-primary;
+      border: 2px solid $color-primary;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      display: block;
+      position: relative;
+      transition: background-color 0.3s ease-in-out;
+      @include font-size(18);
+
+      @include sp-layout() {
+          margin: 0 auto 2rem;
+      }
+
+      &:hover {
+          background-color: rgba($color-primary, 0.1);
+      }
+
+      &:after {
+          content: '';
+          width: 75px;
+          height: 2px;
+          background-color: $color-primary;
+          position: absolute;
+          top: 50%;
+          right: -25px;
+          transform: translateY(-50%);
+      }
+  }
+
+  &__img {
+      width: 50%;
+      margin-bottom: 50px;
+
+      @include sp-layout() {
+          width: 100%;
+          margin-bottom: 25px;
+      }
+  }
+}
+
+.c-title{
+  text-transform: uppercase;
+  // text-decoration: none;
+  // border-bottom: 1px solid blue;
+  // padding-bottom: 10px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1em;
+  display: block;
+
+  &::after{
+    content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -15px;/*線の上下位置*/
+  display: inline-block;
+  width: 60px;/*線の長さ*/
+  height: 5px;/*線の太さ*/
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);/*位置調整*/
+  background-color: black;/*線の色*/
+  border-radius: 2px;/*線の丸み*/
+  }
 }

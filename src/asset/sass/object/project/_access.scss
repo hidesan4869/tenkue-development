@@ -1,2 +1,112 @@
-.p-access {
-}
+body{
+    font-family:serif;
+    color:#222;
+    line-height:2;
+  }
+  
+  .l-content-wrap-default {
+    position: relative;
+    max-width: 1024px;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: content-box !important;
+    padding-right: 2.4% !important;
+    padding-left: 2.4% !important;
+  }
+  .resizeimage{
+      width:100%;
+      height:500px;
+      } 
+  
+  .section-title {
+          font-size: 25px;
+          font-weight: 700;
+          padding-top:70px;
+          padding-bottom:30px;
+          margin:0;
+          position: relative;
+          text-align: center;
+          line-height: 1;
+          &::after {
+            content: "";
+            background: $color-main;
+            width: 60px;
+            height: 4px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            @include mq('sp') {
+              width: 48px;
+            }
+          }
+          @include mq('tab') {
+            font-size: 50px;
+            padding-bottom: 28px;
+          }
+          @include mq('sp') {
+            font-size: 42px;
+            padding-bottom: 16px;
+          }
+        }
+        
+  .meisyo-1 li{
+      display: flex;
+      flex-wrap:wrap;
+      float: left;
+      list-style: none;
+      margin: 0px;
+      width: calc(100%/4);
+      padding:5px 5px;
+      box-sizing:border-box;
+      max-width:100%; 
+      height: auto; 
+  }
+  .meisyo-2 li{
+      display: flex;
+      flex-wrap:wrap;
+      float: left;
+      list-style: none;
+      margin: 0px;
+      width: calc(100%/4);
+      padding:5px 5px;
+      box-sizing:border-box;
+      max-width:100%; 
+    height: auto; 
+    margin-bottom:50px; 
+  }
+  h5{
+    margin-bottom:-40px;
+  }
+  
+  .access-text{
+    text-align: center;
+    font-size:15px;
+  }
+  @media screen and (min-width: 481px) {
+    .access-text {
+      font-size:22px;
+    }
+  }
+  @media screen and (min-width: 640px) {
+    .access-text{
+      font-size:18px;
+    }
+  }
+  
+  .kousiki{
+    padding-bottom:60px;
+    font-size:22px;
+  }
+  @media screen and (min-width: 481px) {
+    .kousik{
+      font-size:20px;
+    }
+  }
+  @media screen and (min-width: 640px) {
+    .kousiki{
+      font-size:17px;
+    }
+  }
+    
+  

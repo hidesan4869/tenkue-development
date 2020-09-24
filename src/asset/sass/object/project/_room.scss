@@ -18,7 +18,7 @@
       background-size: cover;
   }
 
-  &__inner {
+  &-inner {
       padding-top: 75px;
 
       @include sp-layout() {
@@ -26,7 +26,7 @@
       }
   }
 
-  &__container {
+  &-container {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -52,7 +52,7 @@
       }
   }
 
-  &__item {
+  &-item {
       width: 47.5%;
 
       @include sp-layout() {
@@ -60,28 +60,28 @@
       }
   }
 
-  &__num {
+  &-num {
       margin-bottom: 0.5rem;
       font-weight: bold;
       letter-spacing: 0.1em;
       @include font-size(32);
   }
 
-  &__subtitle {
+  &-subtitle {
       margin-bottom: 1rem;
       text-transform: uppercase;
   }
 
-  &__text {
+  &-text {
       margin-bottom: 1rem;
       font-size: 10px;
   }
 
-  &__link {
+  &-link {
       width: 250px;
       padding: 0.24em 1em;
-      color: $color-primary;
-      border: 2px solid $color-primary;
+      color: #00478b;
+      border: 2px solid #00478b;
       text-align: center;
       text-transform: uppercase;
       letter-spacing: 0.1em;
@@ -95,14 +95,14 @@
       }
 
       &:hover {
-          background-color: rgba($color-primary, 0.1);
+          background-color: rgba(#00478b, 0.1);
       }
 
       &:after {
           content: '';
           width: 75px;
           height: 2px;
-          background-color: $color-primary;
+          background-color: #00478b;
           position: absolute;
           top: 50%;
           right: -25px;
@@ -110,7 +110,7 @@
       }
   }
 
-  &__img {
+  &-img {
       width: 50%;
       margin-bottom: 50px;
 

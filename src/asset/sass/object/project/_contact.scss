@@ -1,2 +1,123 @@
-.p-contact {
+.form{
+  display:block;
+}
+body{
+  font-family:serif;
+  color: #222;
+  line-height: 2;
+}
+main{
+  padding-bottom:150px;
+}
+
+.contact-text {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 18px;
+}
+.attention {
+  margin-bottom: 60px;
+  text-align: center;
+}
+.main-photo{
+  width:100%;
+  height: 60vh;
+  background-image: url(image/contact_01.jpg);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-position-x: center;
+background-position-y: center;
+  background-size:cover;
+}
+.section-title {
+        font-size: 24px;
+        margin-bottom:60px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        position: relative;
+        text-align: center;
+      }
+.section-title::after {
+          content:"";
+          width:40px;
+          height:2px;
+          background-color: #00478b;
+          border-radius:1px;
+          box-sizing:border-box;
+          position:absolute;
+          left:50%;
+          bottom:-5px;
+          transform:translateX(-50%);
+          }
+  
+        @include mq('tab') {
+          font-size: 50px;
+          padding-bottom: 28px;
+        }
+        @include mq('sp') {
+          font-size: 42px;
+          padding-bottom: 16px;
+        }
+.p-contact_inputWrap{
+  margin-bottom: 30px;
+  display:flex;
+}
+  @media screen and (max-width: 576px) {
+    .p-contact_inputWrap{
+      flex-direction: column;
+    }
+}
+        
+.p-contact_input{
+  font-size: 16px;
+  width:70%;
+  padding:0.6pm;
+  background-color:#e8e1d3;
+  border:none;
+  border-top-color: currentcolor;
+  border-top-style: none;
+}
+.p-contact-label{
+  width:25%;
+  margin:0 auto;
+  padding:0.6em;
+  color:#fff;
+  background-color:#00478b;
+}
+.contact-textarea{
+ font-size:16px;
+ width:70%;
+ padding:0.6pm;
+ background-color:#e8e1d3;
+ border:none;
+}
+input,select{
+  vertical-align:middle;
+}
+::before,::after{
+  box-sizing:border-box;
+}
+.p-contact_note{
+text-align: center;
+}
+.p-contact_checklabel {
+  max-width: 350px;
+  margin: 0 auto;
+}
+.p-contact_checkbox {
+  font-size: 14px;
+}
+.p-contact_btn {
+  font-size:16px;
+  width: 300px;
+  margin: 0 auto 20px;
+  padding: 1em;
+  background-color: transparent;
+  border: 1px solid #222;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  cursor: pointer;
+  font-size: 16px;
 }

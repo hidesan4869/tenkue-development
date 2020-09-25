@@ -1,2 +1,77 @@
-.p-areaguide {
+.areaguide__top {
+  background-image: url(/src/asset/image/areaguide_01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 420px;
+}
+
+.areaguide__inner {
+  width: 1088px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.areaguide__sec {
+  padding: 70px 0 150px;
+}
+
+.areaguide__text {
+  text-align: center;
+
+  .text01 {
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+
+  .text02 {
+    font-size: 16px;
+    font-weight: 100;
+  }
+}
+//=======section共通スタイル=======//
+.section__title {
+  font-size: 24px;
+  padding: 0 0 28px;
+  margin: 0 0 60px;
+  position: relative;
+  text-align: center;
+  line-height: 1;
+
+  &::after {
+    content: "";
+    background: $color-primary;
+    width: 60px;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.areamap__sec {
+  padding-top: 70px;
+}
+
+.areamap__img {
+  width: 60%;
+  display: block;
+  margin: auto;
+}
+
+.areaguide__subtitle {
+  text-align: center;
+  margin: 50px 0 20px;
+  font-size: 18px;
+}
+.areaguide__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.areaguide__list {
+  width: 30%;
 }

@@ -1,25 +1,116 @@
 <!DOCTYPE html>
 <html lang="ja">
+    <link rel="stylesheet" href="./foundation/base.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="./foundation/layou/header.css"> 
+    <link rel="stylesheet" href="./foundation/layout/footer.css">
+    <link rel="stylesheet" href="app.css">
     <head>
-
-        <%- include('../_includes/_common.ejs') %> 
-
+       <!--<%- include('../_includes/_common.ejs') %>  -->
+        <meta charaset="utf8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tenkue Hotel</title>
-
+        <header class="l-header" id="header">
+            <div class="container"></div>
+            <div class="header__inner">
+             <a class="l-header__logo" href=""#>
+               <img class="resizeimage" src="./image/logo_header.svg" alt="ヘッダー"></a>
+              <nav class="header__nav">
+                <ul>
+                <li><a class="header-nav__item" href="#">TOP</a></li>
+                <li><a class="header-nav__item" href="#">ROOM</a></li>
+                <li><a class="header-nav__item" href="#">AREA GUIDE</a></li>
+                <li><a class="header-nav__item" href="#">ACCESS</a></li>
+                <li><a class="header-nav__item" href="#">CONTACT</a></li>
+                </ul>
+              </nav> 
+             </div>
+            </div>
+          </header>
     </head>
-</html>
-
+    
     <body>
-        <%- include('../_includes/_header') %>
-
+        <!-- <%- include('../_includes/_header') %> -->
         <main>
-            <article class="p-contact">
-                
-            </article>
-
+            <div class="main-photo" ></div>
+            <p class="section-title">
+                CONTACT
+            </p>
+            <h3 class="contact-text">ご不明な点がございましたら<br>
+                お気軽に下記のフォームよりお問い合わせください。
+            </h3>
+            <h4 class="attention">
+                お問い合わせのご返答にはお時間をいただく場合がございます。<br>
+                当日・翌日のお問い合わせ、その他お急ぎの場合は、<br>
+                恐れ入りますがお電話にてお問い合わせくださいますようお願いいたします。
+            </h4>
+            <form class="p-contact_form" action="">
+                <div class="p-contact_inputWrap">
+                    <label class="p-contact-label" for="list">お問い合せ項目</label>
+            <select id="list" class="p-contact_input" name="list">
+                <option value="syukuhaku">宿泊について</option>
+                <option value="restaurant">レストランについて</option>
+                <option value="content-hotel">当ホテルについて</option>
+                <option value="another">その他</option>
+           </select>
+        </div>
+        <div class="p-contact_inputWrap">
+            <label class="p-contact-label" for="name">お名前</label>
+            <input type="text" id="name" class="p-contact_input">
+        </div>
+        <div class="p-contact_inputWrap">
+            <label class="p-contact-label" for="tell">お電話番号</label>
+            <input type="text" id="tel" class="p-contact_input">
+        </div>
+        <div class="p-contact_inputWrap">
+            <label class="p-contact-label" for="email">メールアドレス</label>
+            <input type="text" id="mail" class="p-contact_input">
+        </div>
+        <div class="p-contact_inputWrap">
+            <label class="p-contact-label" for="textarea">お問合せ内容</label>
+            <textarea name="" id="textarea" cols="30" rows="8" class="contact-textarea"></textarea>
+        </div>
+        <p class="p-contact_note">
+            "弊社の個人情報の取扱いについては
+            <a href="#">プライバシーポリシー</a>
+            "をご覧ください。"
+        </p>
+        <div class="p-contact_inputWrap p-contact_checklabel" >
+            <label class="p-contact_checklabel" for="privacy">
+            <input id="privacy" type="checkbox" name="agree">
+            プライバシーポリシーに同意します。
+        </label>
+        </div>
+        <button class="p-contact_btn" type="submit">送信する
+        </button>
+        </form>
         </main>
-
-        <%- include('../_includes/_footer.ejs') %>
-
     </body>
+        <!-- <%- include('../_includes/_footer.ejs') %> -->
+        <footer class="footer">
+            <div class="footer__contents">
+              <div class="footer__inner">
+              <div class="footer__left">
+                <div class="footer__logo"><a href="#"><img src="./image/logo_footer.svg" alt="Tenkue-Hotel"></a></div>
+              <div class="footer__info">
+                <p>〒530−0001</p>
+                <p>大阪市北区梅田3丁目1番1号</p>
+                <p>TEL06-1234-5678(代)</p>
+              </div>
+            </div>
+            <div class="footer__center">
+              <nav class="footer__nav">
+                <ul>
+                  <li><a href="">TOP</a></li>
+                  <li><a href="">ROOM</a></li>
+                  <li><a href="">AREA GUIDE</a></li>
+                  <li><a href="">ACCESS</a></li>
+                  <li><a href="">CONTACT</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+            </div>
+            <div class="footer__copy">©︎2020 Tenkue App</div>
+          </footer>
 </html>

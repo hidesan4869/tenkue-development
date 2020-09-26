@@ -68,13 +68,13 @@
   }
 
   &__subtitle {
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
       text-transform: uppercase;
   }
 
   &__text {
       margin-bottom: 1rem;
-      font-size: 10px;
+      font-size: 13px;
   }
 
   &__link {
@@ -129,7 +129,7 @@
   text-align: center;
   position: relative;
   display: inline-block;
-  margin-bottom: 1em;
+  margin-bottom: 60px;
   display: block;
 
   &::after{

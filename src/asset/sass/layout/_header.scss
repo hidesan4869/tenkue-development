@@ -1,62 +1,117 @@
-.header__inner {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-
-.header {
-  position: fixed;
-  top: 0px;
-  left: 0px;
+.l-header {
   width: 100%;
-  height: 80px;
-  padding: 25px 50px;
-  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  padding: 20px;
+  position: fixed;
   box-shadow: 3px 3px #f7f7f7;
   z-index: 99;
-}
-
-.header__logo {
-  margin: 0;
-  line-height: 1;
-  width: auto;
-  height: 25px;
-}
-
-.header__logo img {
-  width: auto;
-  height: 100%;
-}
-
-.header__nav {
-  margin-left: auto;
-
-  @include sp-layout {
-    display: none;
+  
+  .l-logo {
+    font-size: 20px;
   }
-
-  ul {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-
+}
+.js-nav__button {
+  display: none;
+}
+.l-nav {
+  a {
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+  }
   li {
-    margin-right: 70px;
+    display: inline-block;
+    margin: 0 30px;
+  }
+}
+.js-nav__wrap.open {
+  display: block;
+}
+.js-nav__wrap.close {
+  display: none;
+}
+@media screen and (min-width: 577px) {
+  .js-nav__wrap {
+    display: block;
+  }
+}
 
-    &:last-child {
-      margin: 0;
-      }
-     }
+@include sp-layout {
+  .js-nav__button {
+    display: block;
+    cursor: pointer;
+  }
+  .js-nav__wrap {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+    z-index: 10;
+    background-color: #222222;
+    width: 100%;
+    height: 100%;
+
+    .l-nav {
+      height: 100%;
+      position: relative;
+      overflow-x: hidden;
+      overflow-y: auto;
+      text-align: center;
+      margin-top: 100px;
     }
-   }
-
-.header-nav__item {
-  text-decoration: none;
-  color: black;
+    li {
+      display: block;
+      margin: 32px;
+      a {
+        color: #fff;
+        font-size: 18px;
+      }
+    }
+  }
+  /*メニューボタンのエフェクト*/
+  .js-nav__button,
+  .js-nav__button span {
+    display: inline-block;
+    transition: all 0.4s;
+    box-sizing: border-box;
+  }
+  .js-nav__button {
+    z-index: 20;
+    position: relative;
+    width: 40px;
+    height: 36px;
+  }
+  .js-nav__button span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #00478b;
+    border-radius: 4px;
+  }
+  .js-nav__button span:nth-of-type(1) {
+    top: 0;
+  }
+  .js-nav__button span:nth-of-type(2) {
+    top: 16px;
+  }
+  .js-nav__button span:nth-of-type(3) {
+    bottom: 0;
+  }
+  .js-nav__button.active span:nth-of-type(1) {
+    -webkit-transform: translateY(16px) rotate(-45deg);
+    transform: translateY(16px) rotate(-45deg);
+    background-color: #fff;
+  }
+  .js-nav__button.active span:nth-of-type(2) {
+    opacity: 0;
+    background-color: #fff;
+  }
+  .js-nav__button.active span:nth-of-type(3) {
+    -webkit-transform: translateY(-16px) rotate(45deg);
+    transform: translateY(-16px) rotate(45deg);
+    background-color: #fff;
+  }
 }

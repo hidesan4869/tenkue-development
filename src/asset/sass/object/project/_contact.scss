@@ -1,103 +1,140 @@
-.Form-Item {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  width: 100%;
-  display: flex;
+body{
+  font-family:serif;
+  color: #222;
+  line-height: 2;
 }
-@media screen and (max-width: 480px) {
-  .Form-Item {
-    padding-left: 14px;
-    padding-right: 14px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    flex-wrap: wrap;
-  }
+main{
+  padding-bottom:150px;
 }
-.Form-Item:nth-child(5) {
-  border-bottom: 1px solid #ddd;
-}
-.Form-Item-Label {
-  font-weight: bold;
-  float:left;
-  width: 100%;
-  max-width: 248px;
-  letter-spacing: 0.05em;
-  font-size: 18px;
-}
-@media screen and (max-width: 480px) {
-  .Form-Item-Label {
-    max-width: inherit;
-    display: flex;
-    align-items: center;
-    font-size: 15px;
-  }
-}
-.Form-Item-Label.isMsg {
-  margin-top: 8px;
-  margin-bottom: auto;
-}
-@media screen and (max-width: 480px) {
-  .Form-Item-Label.isMsg {
-    margin-top: 0;
-  }
-}
-.Form-Item-Label-Required {
-  margin-right: 6px;
-  padding-top: 10px;
-  padding-bottom: 8px;
-  height:26px;
-  width: 240px;
-  display: inline-block;
+.cont{
+  &_act_text {
+  margin-bottom: 30px;
   text-align: center;
-  background: #1207ed;
-  color: #fff;
   font-size: 18px;
 }
-@media screen and (max-width: 480px) {
-  .Form-Item-Label-Required {
-    padding-top: 4px;
-    padding-bottom: 4px;
-    width: 32px;
-    font-size: 10px;
-  }
+
+  &_attention {
+  margin-bottom: 60px;
+  text-align: center;
 }
-.Form-Item-Input {
-  margin-top:16px;
-  margin-left: 40px;
-  padding-left: 0.5em;
-  margin-right: 50px;
-  height: 48px;
+
+  &_main-photo{
+  width:100%;
+  height: 60vh;
+  background-image: url(image/contact_01.jpg);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-position-x: center;
+  background-position-y: center;
+  background-size:cover;
+}
+
+  &_section-title {
+        font-size: 24px;
+        margin-bottom:60px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        position: relative;
+        text-align: center;
+      }
+
+  &_section-title::after {
+          content:"";
+          width:40px;
+          height:2px;
+          background-color: #00478b;
+          border-radius:1px;
+          box-sizing:border-box;
+          position:absolute;
+          left:50%;
+          bottom:-5px;
+          transform:translateX(-50%);
+          }
+  
+        @include mq('tab') {
+          font-size: 50px;
+          padding-bottom: 28px;
+        }
+        @include mq('sp') {
+          font-size: 42px;
+          padding-bottom: 16px;
+        }
+  &_inputWrap{
+  margin-bottom: 30px;
   display:flex;
-  border: none;
-  width: 410px;
-  font-size: 18px;
-  background: #f8f8d5;
+  flex-direction: column；
 }
-@media screen and (max-width: 480px) {
-  .Form-Item-Input {
-    margin-left: 0;
-    margin-top: 18px;
-    height: 40px;
-    flex: inherit;
-    font-size: 15px;
-  }
+  @media screen and (max-width: 576px) {
+    .p-contact_label{
+      display:block;
+      width:70px;
+    }
 }
-.Form-Item-Textarea {
-  border: none;
-  margin-left: 40px;
-  height: 280px;
-  flex: 1;
-  width: 500px;
-  max-width: 600px;
-  background: #f8f8d5;
-  font-size: 18px;
+        
+  &_input{
+  font-size: 16px;
+  width:70%;
+  padding:0.6pm;
+  background-color:#e8e1d3;
+  border:none;
+  border-top-color: currentcolor;
+  border-top-style: none;
 }
-@media screen and (max-width: 600px) {
-  .Form-Item-Textarea {
-    margin-top: 18px;
-    margin-left: 0;
-    height: 200px;
-    flex: inherit;
-    font-size: 15px;
-  }
+
+@media screen and (max-width: 576px) {
+    .p-contact_input{
+      display:block;
+    }
+}
+
+ &_label{
+  width:25%;
+  margin:0 auto;
+  padding:0.6em;
+  color:#fff;
+  background-color:#00478b;
+}
+
+ &_textarea{
+ font-size:16px;
+ width:70%;
+ padding:0.6pm;
+ background-color:#e8e1d3;
+ border:none;
+}
+
+  &_note{
+  text-align: center;
+}
+
+  &_checklabel {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+  &_checkbox {
+  font-size: 14px;
+}
+
+  &_btn {
+  font-size:16px;
+  width: 300px;
+  margin: 0 auto 20px;
+  padding: 1em;
+  background-color: transparent;
+  border: 1px solid #222;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  cursor: pointer;
+  font-size: 16px;
+}
+}
+
+input,select{
+  vertical-align:middle;
+}
+::before,::after{
+  box-sizing:border-box;
 }

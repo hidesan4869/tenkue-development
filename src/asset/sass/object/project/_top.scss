@@ -1,5 +1,5 @@
 .p-top {
-  &-mv {
+  &__mv {
       width: 100%;
       height: calc(100vh - 80px);
       margin-top: 80px;
@@ -9,7 +9,7 @@
       background-position: center;
   }
 
-  &-container {
+  &__container {
       display: block;
     //   margin-bottom: 50px;
       padding: 60px 0;
@@ -25,7 +25,7 @@
       }
   }
 
-  &-title {
+  &__title {
       margin-top: 10px;
       margin-bottom: 60px;
       text-align: center;
@@ -37,19 +37,19 @@
       }
   }
 
-  &-subtitle {
+  &__subtitle {
       text-transform: uppercase;
       @include font-size(18);
   }
 
-  &-text {
+  &__text {
       text-align: center;
       line-height: 2.5;
       // @include sp-layout(){
       //     font-size: 100px;
       // }
   }
-  &-imgWrap {
+  &__imgWrap {
       margin-top: 30px;
       display: flex;
       justify-content: space-between;
@@ -59,11 +59,11 @@
       }
   }
 
-  &-btnWrap {
+  &__btnWrap {
       width: 100%;
   }
 
-  &-btn {
+  &__btn {
       width: 100%;
       margin-top: 40px;
       margin-bottom: 30px;
@@ -77,7 +77,7 @@
           margin-top: 20px;
       }
 
-      &--secondary {
+      &__-secondary {
           max-width: 400px;
           margin-left: auto;
           margin-right: auto;
@@ -88,12 +88,12 @@
       }
   }
 
-  &-note,
-  &-note a {
+  &__note,
+  &__note a {
       @include font-size(14);
   }
 
-  &-imgWrap{
+  &__imgWrap{
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
@@ -111,7 +111,7 @@ iframe {
     // @include sp-layout {
     //     display: block;
     // }
-  &-list {
+  &__flist {
       display: block;
       height: 100%;
   width: 45%;
@@ -128,7 +128,7 @@ iframe {
     width: 100%;
 }
 
-  &-list{
+  &__list{
     width: 30%;
   }
 }

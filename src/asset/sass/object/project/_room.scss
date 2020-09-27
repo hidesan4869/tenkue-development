@@ -9,7 +9,7 @@
       padding-bottom: 75px;
   }
 
-  &-mv {
+  &__mv {
       width: 100%;
       height: 60vh;
       background-image: url(../../asset/image/room_04.jpg);
@@ -18,7 +18,7 @@
       background-size: cover;
   }
 
-  &-inner {
+  &__inner {
       padding-top: 75px;
 
       @include sp-layout() {
@@ -26,7 +26,7 @@
       }
   }
 
-  &-container {
+  &__container {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -47,12 +47,12 @@
           }
       }
 
-      &-rev {
+      &__rev {
           flex-direction: row-reverse;
       }
   }
 
-  &-item {
+  &__item {
       width: 47.5%;
 
       @include sp-layout() {
@@ -60,24 +60,24 @@
       }
   }
 
-  &-num {
+  &__num {
       margin-bottom: 0.5rem;
       font-weight: bold;
       letter-spacing: 0.1em;
       @include font-size(32);
   }
 
-  &-subtitle {
+  &__subtitle {
       margin-bottom: 1rem;
       text-transform: uppercase;
   }
 
-  &-text {
+  &__text {
       margin-bottom: 1rem;
       font-size: 10px;
   }
 
-  &-link {
+  &__link {
       width: 250px;
       padding: 0.24em 1em;
       color: #00478b;
@@ -110,7 +110,7 @@
       }
   }
 
-  &-img {
+  &__img {
       width: 50%;
       margin-bottom: 50px;
 

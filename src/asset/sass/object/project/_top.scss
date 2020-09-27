@@ -1,2 +1,134 @@
 .p-top {
+  &-mv {
+      width: 100%;
+      height: calc(100vh - 80px);
+      margin-top: 80px;
+      background-image: url(../image/mv.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+
+  &-container {
+      display: block;
+    //   margin-bottom: 50px;
+      padding: 60px 0;
+
+      &:nth-of-type(3) {
+          background-color: #fffff9;
+      }
+
+      @include sp-layout() {
+          padding: 30px 0;
+          height: 750px;
+          text-align: center;
+      }
+  }
+
+  &-title {
+      margin-top: 10px;
+      margin-bottom: 60px;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+
+      @include sp-layout() {
+          margin-bottom: 30px;
+      }
+  }
+
+  &-subtitle {
+      text-transform: uppercase;
+      @include font-size(18);
+  }
+
+  &-text {
+      text-align: center;
+      line-height: 2.5;
+      // @include sp-layout(){
+      //     font-size: 100px;
+      // }
+  }
+  &-imgWrap {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+
+      & img {
+          width: 23%;
+      }
+  }
+
+  &-btnWrap {
+      width: 100%;
+  }
+
+  &-btn {
+      width: 100%;
+      margin-top: 40px;
+      margin-bottom: 30px;
+      padding: 0.6em 2em;
+      display: block;
+      color: #fff;
+      text-align: center;
+      background-color: rgba(#00478b, 1);
+
+      @include sp-layout() {
+          margin-top: 20px;
+      }
+
+      &--secondary {
+          max-width: 400px;
+          margin-left: auto;
+          margin-right: auto;
+
+          &:before {
+              background-image: url(/asset/image/login.svg);
+          }
+      }
+  }
+
+  &-note,
+  &-note a {
+      @include font-size(14);
+  }
+
+  &-imgWrap{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+iframe {
+  width: 100%;
+}
+
+.l-col2{
+    display: flex;
+    justify-content: space-between;
+
+    // @include sp-layout {
+    //     display: block;
+    // }
+  &-list {
+      display: block;
+      height: 100%;
+  width: 45%;
+  float: left;
+  margin-right: 30px;
+}
+}
+
+.l-col3{
+  display: flex;
+  justify-content: space-between;
+
+  @include sp-layout() {
+    width: 100%;
+}
+
+  &-list{
+    width: 30%;
+  }
 }

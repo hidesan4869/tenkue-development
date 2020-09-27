@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ja">
     <head>
-
-        <%- include('./_includes/_common.ejs') %> 
-
-        <title>Tenkue App</title>
-
+			<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">			<meta http-equiv="X-UA-Compatible" content="ie=edge" />       
+			 <%- include('./_includes/_common.ejs') %> 
+			        <title>Tenkue App</title>
+				<link rel="stylesheet" href="../src/asset/sass/app.css">
+				<link rel="stylesheet" href="../dist/asset/css/app.min.css">
+				<link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;700&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet" />
     </head>
 </html>
 
@@ -13,11 +15,74 @@
         <%- include('./_includes/_header') %>
 
         <main>
-            <article class="p-top">
-                
-            </article>
+            <section class="p-top-mv">
 
+						</section>
+		<section class="p-top-container">
+			<div class="p-top-inner l-content-wrap-default">
+				<h2 class="p-top-title">concept</h2>
+				<p class="p-top-text"> 日本の文化に触れて頂き、日本をより好きになって頂き、お客様・従業員全てが笑顔になれるおもてなしを実現致します。<br /> 各種交通機関からのアクセスも良く、外国人観光客だけでなく、国内の家族旅行者など、<br /> 多くのお客様の観光拠点と旅行者とつなぐ場所として、快適で贅沢な空間を提供致します。<br /> 宿泊期間やご人数の関わらずご利用頂け、タイトなスケジュールになりがちなご予定も出来る限りサポートできるよう、<br /> チェックインやチェックアウトのお時間もご相談ください。<br /> さらに、長期滞在でもお楽しみ頂けるよう、様々なアクティビティーの実施も予定しております。 </p>
+			</div>
+		</section>
+		<section class="p-top-container">
+			<div class="p-top-inner l-content-wrap-default">
+				<h2 class="p-top-title">area guide</h2>
+				<div class="l-col2">
+					<div class="l-col2-list">
+						<img src="../src/asset/image/top_map.jpg" alt="" />
+					</div>
+					<div class="l-col2-list">
+						<p class="p-top-text"> 各観光名所へもスムーズに<br /> アクセスできる好立地。<br /> 大阪を代表する観光名所や大阪の<br /> 見どころをご紹介。 </p>
+						<div class="p-top-imgWrap">
+							<img src="asset/image/top_areaguide_01.jpg" alt="" />
+							<img src="asset/image/top_areaguide_02.jpg" alt="" />
+							<img src="asset/image/top_areaguide_03.jpg" alt="" />
+							<img src="asset/image/top_areaguide_04.jpg" alt="" />
+						</div>
+						<a href="/areaguide/" class="p-top-btn">詳細はこちら</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="p-top-container">
+			<div class="p-top-inner l-content-wrap-default">
+				<h2 class="p-top-title">room</h2>
+				<div class="l-col3">
+					<div class="l-col3-list">
+						<img src="asset/image/room_01.jpg" alt="" />
+						<h3 class="p-top-subtitle">sweet room</h3>
+						<p>雰囲気漂うプライベート空間。心地よく安らぎへと誘います。</p>
+					</div> 
+					<div class="l-col3-list">
+						<img src="asset/image/room_02.jpg" alt="" />
+						<h3 class="p-top-subtitle">deluxe room</h3>
+						<p>雰囲気漂うプライベート空間。心地よく安らぎへと誘います。</p>
+					</div>
+					<div class="l-col3-list">
+						<img src="asset/image/room_03.jpg" alt="" />
+						<h3 class="p-top-subtitle">standard room</h3>
+						<p>雰囲気漂うプライベート空間。心地よく安らぎへと誘います。</p>
+					</div>
+				</div>
+				<a href="/room/" class="p-top-btn p-top-btn--secondary">詳細はこちら</a>
+			</div>
+		</section>
+		<section class="p-top-container">
+			<div class="p-top-inner l-content-wrap-default">
+				<div class="l-col2">
+					<div class="l-col2-list">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.083461557608!2d135.49308241523244!3d34.703074780433894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e68dc5241021%3A0x4c619b45cc7f0e19!2z44CSNTMwLTAwMDEg5aSn6Ziq5bqc5aSn6Ziq5biC5YyX5Yy65qKF55Sw77yT5LiB55uu77yR4oiS77yR!5e0!3m2!1sja!2sjp!4v1599311883467!5m2!1sja!2sjp" width="600" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+					</div>
+					<div class="l-col2-list">
+						<h2 class="p-top-title">access</h2>
+						<p class="p-top-text"> 〒530-0001 大阪市北区梅田3丁目1番1号<br /> TEL.06-1234-5678(代) </p>
+						<a href="/access/" class="p-top-btn">詳細はこちら</a>
+					</div>
+				</div>
+			</div>
+		</section>
         </main>
+
 
         <%- include('./_includes/_footer.ejs') %>
 

@@ -1,21 +1,24 @@
-body{
+.contact{
   font-family:serif;
   color: #222;
   line-height: 2;
 }
-main{
-  padding-bottom:150px;
-}
 .cont{
-  &_act_text {
+  &_text{
   margin-bottom: 30px;
   text-align: center;
   font-size: 18px;
+  font-family:serif;
+  color: #222;
+  line-height: 2;
 }
 
   &_attention {
   margin-bottom: 60px;
   text-align: center;
+  font-family:serif;
+  color: #222;
+  line-height: 2;
 }
 
   &_main-photo{
@@ -51,21 +54,21 @@ main{
           transform:translateX(-50%);
           }
   
-        @include mq('tab') {
-          font-size: 50px;
-          padding-bottom: 28px;
-        }
-        @include mq('sp') {
-          font-size: 42px;
-          padding-bottom: 16px;
-        }
+        @media screen and (max-width: 576px) {
+    .cont_section-title{
+      display:block;
+      width:70px;
+    }
+}
+
   &_inputWrap{
   margin-bottom: 30px;
   display:flex;
   flex-direction: column；
 }
+
   @media screen and (max-width: 576px) {
-    .p-contact_label{
+    .cont_label{
       display:block;
       width:70px;
     }
@@ -82,12 +85,12 @@ main{
 }
 
 @media screen and (max-width: 576px) {
-    .p-contact_input{
+    .cont_input{
       display:block;
     }
 }
 
- &_label{
+  &_label{
   width:25%;
   margin:0 auto;
   padding:0.6em;
@@ -121,6 +124,7 @@ main{
   width: 300px;
   margin: 0 auto 20px;
   padding: 1em;
+  margin-bottom:150px;
   background-color: transparent;
   border: 1px solid #222;
   -webkit-appearance: none;
@@ -129,7 +133,6 @@ main{
   display: block;
   cursor: pointer;
   font-size: 16px;
-}
 }
 
 input,select{

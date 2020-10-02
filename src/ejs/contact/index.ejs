@@ -9,6 +9,7 @@
     <body>
         <%- include('../_includes/_header') %> 
         <main>
+        <div class="contact">
             <div class="cont_main-photo" ></div>
             <p class="cont_section-title">
                 CONTACT
@@ -23,7 +24,7 @@
             </h4>
             <form class="cont_form" action="">
                 <div class="cont_inputWrap">
-                    <label class="cont-label" for="list">お問い合せ項目</label>
+                    <label class="cont_label" for="list">お問い合せ項目</label>
             <select id="list" class="cont_input" name="list">
                 <option value="syukuhaku">宿泊について</option>
                 <option value="restaurant">レストランについて</option>
@@ -44,7 +45,7 @@
             <input type="text" id="mail" class="cont_input">
         </div>
         <div class="cont_inputWrap">
-            <label class="p_contact_label" for="cont_textarea">お問合せ内容</label>
+            <label class="cont_label" for="cont_textarea">お問合せ内容</label>
             <textarea name="" id="cont_textarea" cols="30" rows="8" class="cont_textarea"></textarea>
         </div>
         <p class="cont_note">
@@ -60,6 +61,7 @@
         </div>
         <button class="cont_btn" type="submit">送信する
         </button>
+        </div>
         </main>
          <%- include('../_includes/_footer.ejs') %> 
   </body>

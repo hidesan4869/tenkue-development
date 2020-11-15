@@ -1,2 +1,115 @@
-.p-access {
+.p-access{
+  &__content-wrap-default {
+  position: relative;
+  max-width: 1024px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family:serif;
+  color: #222;
+  line-height:2;
+  box-sizing: content-box !important;
+  padding-right: 2.4% !important;
+  padding-left: 2.4% !important;
+  }
+  &__resizeimage{
+    width:100%;
+    height:500px;
+    } 
+
+  &__section-title {
+        font-size: 25px;
+        font-weight: 700;
+        padding-top:70px;
+        padding-bottom:30px;
+        margin:0;
+        position: relative;
+        text-align: center;
+        line-height: 1;
+        font-family:serif;
+        color: #222;
+        line-height:2;
+        &::after {
+          content: "";
+          background:#00478b;
+          width: 60px;
+          height: 4px;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+  }
+        @media screen and (min-width: 481px) {
+        .p-access__section-title {
+        font-size:30;
+      }
+     } 
+        @media screen and (min-width: 640px) {
+        .p-access__section-title{
+        font-size:22px;
+      }
+     }
+      
+  &__meisyo-1 li{
+    display: flex;
+    flex-wrap:wrap;
+    float: left;
+    list-style: none;
+    margin: 0px;
+    width: calc(100%/4);
+    padding:5px 5px;
+    box-sizing:border-box;
+    max-width:100%; 
+    height: auto; 
+}
+  &__meisyo-2 li{
+    display: flex;
+    flex-wrap:wrap;
+    float: left;
+    list-style: none;
+    margin: 0px;
+    width: calc(100%/4);
+    padding:5px 5px;
+    box-sizing:border-box;
+    max-width:100%; 
+  height: auto; 
+  margin-bottom:50px; 
+}
+
+  &__text{
+  text-align: center;
+  font-size:15px;
+  font-family:serif;
+  color: #222;
+  line-height:2;
+}
+@media screen and (min-width: 481px) {
+  .p-access__text {
+    font-size:22px;
+  }
+}
+@media screen and (min-width: 640px) {
+  .p-access__text{
+    font-size:18px;
+  }
+}
+
+  &__kousiki{
+  padding-bottom:60px;
+  font-size:22px;
+  margin-bottom:-40px;
+  font-family:serif;
+  color: #222;
+  line-height:2;
+}
+@media screen and (min-width: 481px) {
+  .p-access__kousik{
+    font-size:20px;
+  }
+}
+@media screen and (min-width: 640px) {
+  .p-access__kousiki{
+    font-size:17px;
+  }
+}
 }
